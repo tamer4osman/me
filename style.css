@@ -45,4 +45,45 @@ img {
 thead{
 	background-color: rgba(000, 000, 000, 0.6);
 }
-tbody{background-color: rgba(000, 000, 000, 0.4);}
+tbody{background-color: rgba(000, 000, 000, 0.4);
+}
+#container {
+  margin: auto;
+  background: grey;
+  height: 350px;
+  overflow: hidden;
+}
+
+#slider {
+  width: 300%;
+  left: 0%;
+  position: relative;
+  padding-top: 25%;
+  transition: left 500ms ease-in;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  width: 33.33%;
+  height: 350px;
+  background-size: cover;
+  background-position: 50%;
+}
+
+#slide1 {
+  background-image: url(img/me.jpg);
+  left: 0%;
+}
+
+#slide2 {
+  background: green;
+  background-image: url(img/me3.jpg);
+  left: 33.33%;
+}
+
+#slide3 {
+  background: blue;
+  background-image: url(img/me2.jpg);
+  left: 66.66%;
+}
